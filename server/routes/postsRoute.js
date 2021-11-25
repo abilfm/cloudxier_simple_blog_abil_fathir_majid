@@ -4,7 +4,7 @@ const postsRouter = express.Router()
 
 postsRouter.get('/', postController.findAllPosts)
 
-postsRouter.get('/:id', postController.findAllPostById)
+postsRouter.get('/:id', postController.findPostById)
 
 postsRouter.post('/', postController.createPost)
 
