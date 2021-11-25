@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
     content: {
       type: DataTypes.TEXT,
       validate: {
-        notContains: { msg: "Content is required" }
+        notEmpty: { msg: "Content is required" }
       }
     },
     image_url: {
