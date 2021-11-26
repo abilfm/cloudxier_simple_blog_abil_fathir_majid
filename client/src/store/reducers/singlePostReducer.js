@@ -13,7 +13,7 @@ const initialState = {
 export const singlePostReducer = (state = initialState, action) => {
   switch(action.type) {
     case SET_SINGLE_POST_DATA:
-      return { ...state, data: action.payload }
+      return { ...state, singlePost: action.payload }
     case SET_SINGLE_POST_LOADING:
       return { ...state, loading: action.payload }
     case SET_SINGLE_POST_ERROR:
