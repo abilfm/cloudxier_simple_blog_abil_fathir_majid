@@ -10,7 +10,7 @@ class PostController {
       })
       res.status(200).json(posts)
     } catch (err) {
-      next()
+      next(err)
     }
   }
 
@@ -31,7 +31,7 @@ class PostController {
         throw { name: "NOT_FOUND_POST" }
       }
     } catch (err) {
-      next()
+      next(err)
     }
   }
 
@@ -48,7 +48,7 @@ class PostController {
 
       res.status(200).json(newPost)
     } catch (err) {
-      next()
+      next(err)
     }
   }
 
@@ -68,7 +68,7 @@ class PostController {
 
       res.status(200).json(updatedPost[1][0])
     } catch (err) {
-      next()
+      next(err)
     }
   }
 
@@ -83,7 +83,7 @@ class PostController {
         throw { name: "NOT_FOUND_POST" }
       }
     } catch (err) {
-      next()
+      next(err)
     }
   }
 }
